@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+    <title>INFOLIGHT</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo-titulo">
+            <div class="logo">
+                <h1>INFOLIGHT</h1>
+                <img src="../ims/Frame.png" alt="cabeçalho-logo">
+            </div>
+             <span id='burguer' class="material-symbols-outlined" style="color:#00FF88;" onclick="clickMenu()">menu</span>
+        </div>
+        
+        <menu class="responsive-menu" id="menu-section">
+            <ul class="mobile-menu-lista">
+                <li class="mobile-menu-items">
+                    <a class="mobile-menu-links" href="">Login</a>
+                </li>
+                <li class="mobile-menu-items">
+                    <a class="mobile-menu-links" href="">Home</a>
+                </li>
+                <li class="mobile-menu-items">
+                    <a class="mobile-menu-links" href="">Dashboard</a>
+                </li>
+
+                <li class="mobile-menu-items">
+                    <a class="mobile-menu-links" href="">Contatos</a>
+                </li>
+            </ul>
+        </menu>
+
+        <nav class="cabecalho-links">
+            <ul class="cabecalho-lista">
+                <li><a class="cabecalho-lista-itens"  href="#">Home</a></li>
+                <li><a class="cabecalho-lista-itens" href="#">Dashboard</a></li>
+                <li><a class="cabecalho-lista-itens" href="#">Contato</a></li>
+                <a class="login-button" href="login-page.html" target="_blank"">LOGIN</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="first-section">
+        <div class="section-text">
+            <h2 class="first-section-title">Economizar energia é preservar o futuro!</h2>
+            <br>
+            <p class="first-section-text">Cada pequena atitude conta, e o impacto delas é muito maior do que imaginamos! No nosso dia a dia, gestos que parecem insignificantes têm um poder transformador sobre o meio ambiente e, de quebra, sobre o nosso próprio bolso.</p>
+            <br>
+            <p class="first-section-text">Desligar a luz ao sair de um cômodo, por exemplo, é mais do que um hábito; é uma demonstração de respeito pelos recursos energéticos. Da mesma forma, tirar aparelhos da tomada (o famoso "stand-by" silencioso) evita o consumo fantasma de energia, um vilão muitas vezes subestimado nas contas de luz. E ao escolher equipamentos mais eficientes, com selo Procel ou equivalentes, você não só investe em tecnologia mais inteligente, mas também garante um consumo otimizado a longo prazo.</p>
+        </div>
+        <img src="../ims/pexels-artempodrez-6990568 1.png" alt="reciclar">
+    </section>
+
+    <section class="second-section">
+       <div class="second-img">
+        <img src="../ims/FIGURA-2-Estimativa-de-consumo-por-eletrodomesticos-de-acordo-com-uso-hipotetico-de-uma.png" alt="">
+       </div>
+       <div class="second-section-items">
+            <h2 class="second-section-title">ATENTE-SE AOS GASTOS!</h2>
+            <br>
+            <p class="second-section-text">
+                O cálculo do consumo de energia residencial é simples: baseia-se na potência dos aparelhos e no tempo de uso. A energia é medida em quilowatt-hora (kWh), que é o resultado da potência do aparelho (em Watts) multiplicada pelo tempo que ele fica ligado (em horas), dividido por 1.000. A sua conta de luz soma o consumo de todos os aparelhos da casa e aplica a tarifa. Pequenas mudanças nos hábitos podem gerar grande economia
+            </p>
+       </div>
+    </section>
+    <section class="third-section">
+        <div class="third-text">
+            <h2>APARELHOS DE ALTO CONSUMO</h2>
+            <P>a seguir uma série de aparelhos que possuem um alto índice de consumo energético!</P>
+        </div>
+            <div class="main-grid">
+                <div class="items-column-first">
+                    <ul class="first-column">
+                        <li class="grid-item"><img class="grid-img" src="../ims/Group 7.png" alt=""><p>Arcondicionado</p></li>
+                        <li class="grid-item"><img class="grid-img" src="../ims/Group 8.png" alt=""><p>Chuveiro</p></li>
+                        <li class="grid-item"><img class="grid-img" src="../ims/Group 9.png" alt=""><p>Secadora</p></li>
+                    </ul>
+                </div>
+                <div class="items-column-second">
+                <ul class="second-column">
+                    <li class="grid-item"><img class="grid-img" src="../ims/Group 10.png" alt=""><p>Ferro de Passar</p></li>
+                    <li class="grid-item"><img class="grid-img" src="../ims/Group 11.png" alt=""><p>Geladeira</p></li>
+                    <li class="grid-item"><img class="grid-img" src="../ims/Group 12.png" alt=""><p>Máquina</p></li>
+                </ul>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="calc-section">
+        <div class="calc-text-div">
+            <h2 class="calc-title">CALCULE O CONSUMO!</h2>
+            <p class="calc-text">Utilize nossa calculadora para descobrir o consumo de seus aparelhos!</p>
+        </div>
+        <div class="calc-main-div">
+            <div class="valores-div">
+                <label for="watts">Informe a Potência do Aparelho(W)</label>
+                  <input type="number" name="watts" id="watts" class="calc-input"> 
+
+                <label for="horas">Informe o tempo de uso em Horas(h)</label>
+                <input type="number" name="horas" id="horas" class="calc-input"></label>
+                
+                 <label for="bandeira">Selecione a bandeira:</label>
+                    <select name="bandeira" id="bandeira" class="calc-input">
+                    <option value="0">Bandeira Verde</option>
+                    <option value="0.018">Bandeira Amarela</option>
+                    <option value="0.078">Bandeira Vermelha</option>
+                </select>
+            
+                <button class="btn-calc" id="botao-calcular">CALCULAR</button>
+            </div>
+            <div class="img-div">
+                <img class="resultado-img" src="../ims/lampada apagada.png" alt="" id="foto-lampada">
+                <p class="resultado-text" id="resultado">RESULTADO: </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="rodape">
+        <p class="rodape-text">UNIFOA - TODOS OS DIREITOS RESERVADOS</p>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../script/main.js"></script>
+
+</body>
+</html>

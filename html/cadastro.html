@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login.css">
+     <script src="../script/validacao.js" defer></script>
+    <title>CADASTRO</title>
+</head>
+<body>
+  <main>
+    <div class="login-box">
+        <img src="../ims/Group.png" alt="" class="login-icon">
+        <h1 class="login-title">Crie sua conta!</h1>
+        
+            <form id="formulario" class="input-box">
+              <label for="nome">Nome Completo:</label>
+              <input type="nome" name="name" id="nome" placeholder="Digite seu nome aqui!">
+              
+              <label for="email">Email:</label>
+              <input type="email" name="email"  id="email" placeholder="exemplo@email.com">
+              
+              <label for="telefone">telefone:</label>
+              <input type="tel" name="telefone"  id="telefone" placeholder="(XX) XXXX-XXXXX">
+              
+              <label for="senha">Senha:</label>
+              <input type="password" name="senha"  id="senha" placeholder="Digite sua senha!">
+              
+              <label for="estado">Estado:</label>
+              
+              <select name="estado" id="" class="dropdown">
+                      <option value="placeholder">Opções</option>
+                      <option value="AC">Acre</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="AP">Amapá</option>
+                      <option value="AM">Amazonas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="DF">Distrito Federal</option>
+                      <option value="ES">Espírito Santo</option>
+                      <option value="GO">Goiás</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="PA">Pará</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PR">Paraná</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="SC">Santa Catarina</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="TO">Tocantins</option>
+              </select>
+              
+              <button type="submit">Criar conta</button>
+            </form>
+        
+        <p>Ao conectar-se você concorda com os termos de uso e condições.</p>
+
+        <a href="../html/login-page.html" class="criar-conta-botao">já possui uma conta? Logar</a>
+    </div>
+  </main>
+</body>
+</html>

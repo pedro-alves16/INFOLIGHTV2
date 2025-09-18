@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height: 100dvh;
+    background-color: #12D078;
+    font-family: 'Roboto';
+}
+
+main{
+     display: flex;
+    align-items: center;
+    justify-content: center; 
+    height:100dvh;
+}
+
+.login-box{
+    background-color: #FFFFFF;
+    width: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+    border-radius: 10px;;
+    gap:10px;
+}
+
+.input-box{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap:10px;
+    
+}
+
+
+.login-title{
+    margin: 0.5em 0 0.5em 0;
+}
+
+input{
+    width: 100%;
+    padding:0.7em;
+    border-radius: 0.5em;
+    border: 1px solid #ACACAC;
+}
+
+button{
+    width: 75%;
+    padding: 0.7em;
+    border-radius: 0.9em;
+    border:none;
+    background-color: #C3C3C3;
+    color:#FFFFFF;
+    margin-top:0.5em;
+    padding:1em;
+    font-size:1em;
+}
+
+label {
+    width:100%;
+    color:#C3C3C3;
+}
+
+p{
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+.redefinirSenhaBotao{
+    text-decoration: none;
+    font-size: 0.8em;
+    color:black;
+}
+
+.novo-por-aqui {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza */
+  margin: 20px 0;
+  width: 70%; /* faz as linhas ocuparem toda a largura disponível */
+  color: #000; /* cor do texto */
+  font-size: 0.9em; /* ajusta o tamanho */
+}
+
+.novo-por-aqui::before,
+.novo-por-aqui::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #000;
+  margin: 0 15px; /* espaço maior entre linha e texto */
+}
+
+.criar-conta-botao{
+    text-decoration: none;
+    color:#000;
+    border: 2px solid #848484;
+    border-radius: 0.7em;
+    padding:0.3em;
+    width:60%;
+    text-align: center;
+}
+
+
+.dropdown{
+    padding:0.7em;
+    border: 1px solid #848484;
+    border-radius: 0.7em;
+    width:105%;
+    color: #3B3737;
+}
+
+@media (max-width: 1024px) {
+  .login-box {
+    width: 40%;
+  }
+}
+
+/* Celulares grandes (até 768px) */
+@media (max-width: 768px) {
+  .login-box {
+    width: 70%;
+    padding: 1.5em;
+  }
+
+  .login-title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .criar-conta-botao {
+    width: 100%;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 1em;
+  }
+
+  input, .dropdown {
+    font-size: 0.9em;
+    padding: 0.6em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 0.8em;
+  }
+
+  label {
+    font-size: 0.8em;
+  }
+
+  p {
+    font-size: 0.7em;
+    text-align: center;
+  }
+}

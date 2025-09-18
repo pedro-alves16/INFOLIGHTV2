@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./calculadora.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width:100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: var(--fonte-texto);
+    background-color: #1B252C;
+    height:100dvh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+
+:root{
+    --cor-do-texto: #9DAFBD;
+    --fonte-texto: 'Roboto';
+    --verde-destaque: #00FF88;
+    --cinza: #9DAFBD;
+}
+
+.cabecalho{
+    background-color: #1C252C;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo-titulo{
+    display:flex;
+    align-items: center;
+    color:#00FF88;
+}
+
+
+.responsive-menu{
+    display:none;
+}
+
+#burguer{
+    display:none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho-lista{
+    display:flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.cabecalho-lista-itens{
+    text-decoration: none;
+    color: var(--cor-do-texto);
+    font-family: var(--fonte-texto);
+}
+
+.cabecalho-lista-itens:hover{
+    color:var(--verde-destaque);
+}
+
+.login-button:hover{
+    background-color: #0d7d81;
+}
+
+.cabecalho-links{
+    display: flex;
+    align-items: center;
+}
+
+.login-button{
+    color: #000814;
+    background-color: #00FF88;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width:6rem;
+    font-family: var(--fonte-texto);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.first-section{
+    display: flex;
+    align-items: center;
+    margin-top: 8em;
+    justify-content: space-around;
+}
+
+.first-section-text{
+    text-wrap: wrap;
+    color: var(--cinza);
+    
+}
+
+.section-text{
+    width: 40%;
+}
+
+.first-section-title{
+    color:var(--verde-destaque);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
+.second-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8em;
+    padding: 6rem 6.5rem;
+    background-color: #6c8797;
+}
+
+.second-section-items {
+    width: 50%;
+    
+}
+
+.second-img img{
+    width:80%;
+}
+
+.second-section-title {
+    color: #1B252C;
+}
+
+.second-section-text {
+    text-wrap: wrap;
+}
+
+.rodape{
+    padding:2em;
+    text-align: center;
+    color: var(--verde-destaque);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 3em;
+}
+
+.third-text h2{
+    color: var(--verde-destaque);
+    font-size: 36px;
+    margin-bottom: 0.5em;
+}
+
+.third-section{
+    margin-bottom: 3em;
+}
+
+.third-text p{
+    color: var(--cinza);
+}
+
+.third-text{
+    padding-top: 5rem;
+    display: flex;
+        text-align: center;
+        flex-direction: column;
+}
+
+.item-title{
+    color:#00FF88;
+}
+
+.main-grid{
+    display: flex;
+    flex-direction: column;
+}
+
+.items-column{
+    display: flex;
+}
+
+.first-column{
+    list-style: none;
+    display: flex;
+    
+}
+
+.second-column{
+    list-style: none;
+}
+
+.items-column-first{
+    display: flex;
+    justify-content: center;
+}
+
+.items-column-second{
+    display: flex;
+    justify-content: center;
+}
+
+.second-column{
+    display: flex;
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    gap:1em;
+}
+
+
+.grid-item p{
+    color:var(--verde-destaque);
+}
+
+.swiper-section-link{
+    text-decoration: none;
+    background-color: #00FF88;
+    color: #000814;
+    font-family: var(--fonte-texto);
+    padding:1em;
+    border-radius: 8px;;
+    font-weight: 700;
+}
+
+.teste-card p{
+    color: var(--cor-do-texto);
+}
+
+.card-list .card-item{
+    user-select: none;
+    display:block;
+}
+
+.card-list .card-img{
+    width:25%;
+    margin-left: 36%;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev{
+    margin-left: 32%;
+}
+
+.swiper-button-next{
+    margin-right: 35%;
+}
+
+.swiper-pagination{
+    display: none;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+@media screen and (max-width:1024px){
+    
+    #burguer{
+    display:none;
+}
+
+
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-text{
+        width: 70%;
+        justify-content: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .first-section-title{
+        text-align: center;
+        font-size: 2.8em;
+        text-wrap: wrap;
+    }
+
+    .first-section-text{
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .first-section img {
+        margin-top: 1.5em;
+    }
+
+    .second-section{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 2em 0 2em 0;
+    }
+
+    .second-section-items{
+        order:1;
+        width:70%;
+        font-size: 1.4rem;
+    }
+
+    .second-section-title{
+        font-size: 2em;
+        text-align: center;
+        text-wrap: nowrap;
+    }
+
+    .second-img{
+        display: flex;
+        order:2;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .second-img img{
+        margin-top:2em;
+        max-width: 60%;
+    }
+
+    .third-text h2{
+        font-size: 2.6em;
+    }
+
+    .third-text p{
+        font-size: 1.4em;
+    }
+
+    .grid-item{
+        flex-direction: column;
+        text-wrap: wrap;
+    }
+
+    .main-grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-column, .second-column{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-item{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        font-size: 1.4em;
+    }
+
+    .grid-img {
+    width: 150px;   /* todas com mesma largura */
+    height: 150px;  /* mesma altura */
+    object-fit: contain; /* mantém proporção sem distorcer */
+}
+
+    .calc-main-div{
+        flex-direction: column;
+    }
+
+    .calc-title{
+        font-size: 3em;
+    }
+
+    .calc-text{
+        font-size:1.5em;
+    }
+    
+    .img-div{
+        order:1;
+    }
+
+    .valores-div{
+        order: 2;
+    }
+
+    .valores-div label,input,select{
+        font-size:2em;
+    }
+
+    .btn-calc {
+  font-size: 2em;
+  padding: 1em;
+  width: 70%;   /* aqui você controla a largura */
+  display: block;
+  margin: 0 auto; /* centraliza */
+}
+
+    .resultado-img{
+        width:90%;
+    }
+
+   .resultado-text{
+    font-size:3em;
+   }
+
+   .rodape-text{
+    font-size: 2em;
+   }
+}
+
+@media screen and (max-width:700px){
+    #burguer{
+        display:block;
+    }
+
+    .logo{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-titulo{
+        justify-content: space-between;
+        width:90%;
+    }
+    .cabecalho{
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        justify-content: space-between;
+        padding:0;
+        border:none;
+        margin-top:1.5em;
+    }
+    .cabecalho-lista{
+        display:none;
+    }
+
+    .responsive-menu{
+        margin-top: 1em;
+        width:100%;
+        display:none;
+    }
+
+    .mobile-menu-lista{
+        list-style: none;
+    }
+
+    .mobile-menu-items{
+        background-color: #161b22;
+        
+        width:100%;
+        text-align: center;
+        border: 2px solid #000000;
+        padding:1em;
+    }
+
+    .mobile-menu-links{
+        text-decoration: none;
+        color:#e5e7eb;
+    }
+
+    .material-symbols-outlined{
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+
+
+    .second-section-title{
+        text-wrap:wrap;
+    }
+
+    .second-section-text{
+        text-align: center;
+    }
+
+    .btn-calc{
+        padding:1em;
+    }
+
+    .valores-div button {
+  font-size: 1.3em;
+  padding: 1em;
+  width: 70%;  
+  display: block;
+  margin: 0 auto; 
+  text-wrap: wrap;
+}
+}
+
+
+@media screen and (max-width:431px){
+    .calc-main-div{
+        text-align: center;
+        text-wrap:wrap; 
+    }
+
+    .resultado-text{
+        font-size: 2em;
+        text-wrap: wrap;
+    }
+
+    .second-section{
+        padding:0;
+    }
+
+    .second-img{
+        margin-bottom: 2em;
+    }
+}
